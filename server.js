@@ -24,6 +24,17 @@ app.use(homeRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/lists', listRoutes)
 
+// serving frontend
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "./client/build/index.html"),
+    function (err) {
+      res.status(500).send(err);
+    }
+  );
+});
+
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
