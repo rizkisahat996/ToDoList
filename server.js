@@ -1,5 +1,6 @@
 require('dotenv').config()
 
+const path = require('path')
 const express = require('express')
 const mongoose = require('mongoose')
 const homeRoutes = require('./routes/home')
@@ -25,10 +26,10 @@ app.use('/api/users', userRoutes)
 app.use('/api/lists', listRoutes)
 
 // serving frontend
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./frontend/build")));
 app.get("*", function (_, res) {
   res.sendFile(
-    path.join(__dirname, "./client/build/index.html"),
+    path.join(__dirname, "./frontend/build/index.html"),
     function (err) {
       res.status(500).send(err);
     }
