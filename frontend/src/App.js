@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/react">
         <Navbar />
         <div className="pages min-h-screen relative">
           <Routes>
