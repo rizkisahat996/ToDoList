@@ -45,12 +45,12 @@ export default function Navbar({ fixed }) {
               <>
               <li className="nav-item">
                 <Link to="/login" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Login</span>
+                  <i className="fab fa-react text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Login</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/signup" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Signup</span>
+                  <i className="fab fa-github text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Signup</span>
                 </Link>
               </li>
               </>
@@ -60,12 +60,12 @@ export default function Navbar({ fixed }) {
               <span>{user.email}</span>
               <li className="nav-item">
                 <Link to="/list" className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">To-Do List</span>
+                  <i className="fab fa-figma text-lg leading-lg text-white opacity-75"></i><span className="ml-2">To-Do List</span>
                 </Link>
               </li>
               <li className="nav-item">
                   <div className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
-                    <button onClick={handleClick} className="fab fa-twitter text-lg leading-lg text-white opacity-75">Logout</button>
+                    <button onClick={handleClick} className="fab fa-square-git text-lg leading-lg text-white opacity-75">Logout</button>
                   </div>
                 </li>
                 </>
