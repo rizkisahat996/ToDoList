@@ -7,7 +7,7 @@ const UserDetails = ({ user }) => {
     const { dispatch } = useUsersContext()
 
     const handleClick = async() => {
-        const response = await fetch ('api/users/' + user._id, {
+        const response = await fetch ('/api/v1/users/' + user._id, {
             method: 'DELETE'
         })
         const json = await response.json()

@@ -15,7 +15,7 @@ const UserForm = () => {
 
         const user = {name, email, password}
 
-        const response = await fetch('/api/users', {
+        const response = await fetch('/api/v1/users', {
             method: 'POST',
             body: JSON.stringify(user),
             headers: {

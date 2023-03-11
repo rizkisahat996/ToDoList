@@ -14,7 +14,7 @@ const ListDetails = ({ list }) => {
 
   const handleClick = async () => {
 
-    const response = await fetch('/api/lists/' + list._id, {
+    const response = await fetch('/api/v1/lists/' + list._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`

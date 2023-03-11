@@ -21,7 +21,7 @@ const ListForm = () => {
 
     const list = {title, description}
 
-    const response = await fetch('/api/lists', {
+    const response = await fetch('/api/v1/lists', {
       method: 'POST',
       body: JSON.stringify(list),
       headers: {
