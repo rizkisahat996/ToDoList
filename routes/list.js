@@ -6,12 +6,12 @@ const {
   deleteList,
   updateList
 } = require('../controllers/listController')
-const requireAuth = require('../middleware/requireAuth')
+// const requireAuth = require('../middleware/requireAuth')
 
 const router = express.Router()
 
 // auth middleware
-router.use(requireAuth)
+// router.use(requireAuth)
 
 // GET all Lists
 router.get('/', getLists)
